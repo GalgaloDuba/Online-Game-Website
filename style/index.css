@@ -73,3 +73,8 @@ frohover,p, h3 {
 .name{
     color: black;
 }
+#social a{
+    background-color: gray;
+    justify-content: space-between;
+    color: white;
+}
