@@ -1,53 +1,48 @@
-<!DOCTYPE html>
+<!-- Coding by CodingLab || www.codinglabweb.com -->
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-		content="width=device-width, 
-				initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="../style/rock.css">
-	<title>Rock Paper Scissor</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>JavaScript Game | Rock Paper Scissors</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="../style/rock.css" />
 </head>
+
 <body>
-	<section class="game">
-		<!--Title -->
-		<div class="title">Rock Paper Scissor</div>
-		
-		<!--Display Score of player and computer -->
-		<div class="score"> 
-			<div class="playerScore">
-				<h2>Player</h2>
-				<p class="p-count count">0</p>
-
-			</div>	 
-			<div class="computerScore">
-				<h2>Computer</h2>
-				<p class="c-count count">0</p>
-
+	<section class="container">
+		<div class="result_field">
+			<div class="result_images">
+				<span class="user_result">
+					<h2>user</h2><br>
+					<img src="images/rock.png" alt="" />
+				</span>
+				<span class="cpu_result">
+					<h2>computer</h2><br>
+					<img src="images/rock.png" alt="" />
+				</span>
 			</div>
+			<div class="result">Let's Play!!</div>
 		</div>
-	
-		<div class="move">Choose your move</div>
-		
-		<!--Number of moves left before game ends -->
-		<div class="movesleft">Moves Left: 10 </div>
-		
-		<!--Options available to player to play game -->
-		<div class="options">
-			<button class="rock">Rock</button>
-			<button class="paper">Paper</button>
-			<button class="scissor">Scissors</button> 
-		</div>
-		
-		<!--Final result of game -->
-		<div class="result"></div>
-		
-		<!--Reload the game -->
-		<button class="reload"></button>
 
+		<div class="option_images">
+			<span class="option_image">
+				<img src="images/rock.png" alt="" />
+				<p>Rock</p>
+			</span>
+			<span class="option_image">
+				<img src="images/paper.png" alt="" />
+				<p>Paper</p>
+			</span>
+			<span class="option_image">
+				<img src="images/scissors.png" alt="" />
+				<p>Scissors</p>
+			</span>
+		</div>
 	</section>
 
-	<script src="script.js"></script>
+	<script src="script.js" defer></script>
 </body>
+
 </html>
