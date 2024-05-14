@@ -9,6 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
  
    <link rel="stylesheet" href="./style/index.css">
+   <link rel="stylesheet" href="./style/log.css">
     
 </head>
 <body>
@@ -36,8 +37,10 @@
         </li>
     </ul>
 </div>
+<a href="#login">
 <button class="btn btn-primary m-3">Login</button>
 <button class="btn btn-warning">Sign Up</button>
+</a>
         </div>
     </nav>
        <!-- showcase -->
@@ -47,7 +50,7 @@
                 <div>
                     <h1 style="font-style: italic;">Games designed to train your  <span class="text-warning">  brain</span></h1>
                 <p style="color: white; font-style: italic;"  class="lead my-4">Explore our cognitive games and exercises..</p>
-                <a href="./html/game.html">
+                <a href="#login">
                 <button class="btn btn-dark btn-lg">  
                    <span class="spinner-grow spinner-grow-sm"></span>
                    Play Know</button></a>
@@ -62,7 +65,7 @@
           
           <div class="d-md-flex justify-content-between align-items-center">
             <a class="category" href="#Strategy"><h3 style="text-decoration: none;" id="" class="mb-2 mb-md-0">Strategy and Logic </h3></a>
-            <a class="category"href="#math"> <h3 class="mb-3 mb-md-0">Quick Decision-Making </h3></a>
+            <a class="category"href="#problem"> <h3 class="mb-3 mb-md-0">Quick Decision-Making </h3></a>
             <a class="category"href="#problem"> <h3 class="mb-1 mb-md-0">Memory and Recall </h3></a>
           </div>
       </div>
@@ -104,8 +107,7 @@
                            </div>
                        </div>
                    </div>
-                   <div class="col-md mt-5">
-                 </div>
+                   
                 </div>
                                    
  <div id="problem" class="row  g-5 mt-5">
@@ -141,8 +143,7 @@
              </div>
          </div>
      </div>
-     <div class="col-md mt-5">
-   </div>
+
   </div>
 
   <div id="problem" class="row  g-5 mt-5">
@@ -180,6 +181,71 @@
   </div>
 </div>
 </section>
+<div class="conainer">
+<div id="login"  class="wrapper text-center  justify-content-center align-item-center">
+  <div class="title-text">
+     <div class="title login">
+        Login Form
+     </div>
+     <div class="title signup">
+        Signup Form
+     </div>
+  </div>
+  <div class="form-container">
+     <div class="slide-controls">
+        <input type="radio" name="slide" id="login" checked>
+        <input type="radio" name="slide" id="signup">
+        <label for="login" class="slide login">Login</label>
+        <label for="signup" class="slide signup">Signup</label>
+        <div class="slider-tab"></div>
+     </div>
+     <div class="form-inner">
+        <form action="./html/game.html" class="login">
+           <div class="field">
+              <input type="text" placeholder="Email Address" required>
+           </div>
+           <div class="field">
+              <input type="password" placeholder="Password" required>
+           </div>
+           <div class="pass-link">
+              <a href="#">Forgot password?</a>
+           </div>
+           <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Login">
+           </div>
+           <div class="signup-link">
+              Not a member? <a href="">Signup now</a>
+           </div>
+        </form>
+        <form action="#" class="signup">
+         <!-- <div class="field">
+             <input type="text" placeholder="First Name" required>
+          </div>
+          <div class="field">
+             <input type="text" placeholder="Last Name" required>
+          </div> -->
+           <div class="field">
+              <input type="email" placeholder="Email Address" required>
+           </div>
+           <div class="field">
+             <input type="text" placeholder="Username" required>
+          </div>
+           <div class="field">
+              <input type="password" placeholder="Password" required>
+           </div>
+           <div class="field">
+              <input type="password" placeholder="Confirm password" required>
+           </div>
+           <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Signup">
+           </div>
+        </form>
+     </div>
+  </div>
+</div>
+</div>
 
 <footer class="text-center bg-dark text-light">
   <!-- Grid container -->
