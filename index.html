@@ -10,7 +10,7 @@
  
    <link rel="stylesheet" href="./style/index.css">
    <link rel="stylesheet" href="./style/log.css">
-    
+  <link rel="stylesheet" href="style/contact.css">   
 </head>
 <body>
     <!-- navbar -->
@@ -33,7 +33,7 @@
             <a href="index.html" class="nav-link">Brain Games</a>
         </li>
         <li class="nav-item">
-            <a href="#instruction" class="nav-link">About Us</a>
+            <a href="#contact-form" class="nav-link">Contuct Us</a>
         </li>
     </ul>
 </div>
@@ -181,66 +181,87 @@
   </div>
 </div>
 </section>
-<div class="conainer">
-<div id="login"  class="wrapper text-center  justify-content-center align-item-center">
-  <div class="title-text">
-     <div class="title login">
-        Login Form
-     </div>
-     <div class="title signup">
-        Signup Form
-     </div>
-  </div>
-  <div class="form-container">
-     <div class="slide-controls">
-        <input type="radio" name="slide" id="login" checked>
-        <input type="radio" name="slide" id="signup">
-        <label for="login" class="slide login">Login</label>
-        <label for="signup" class="slide signup">Signup</label>
-        <div class="slider-tab"></div>
-     </div>
-     <div class="form-inner">
-        <form action="./html/game.html" class="login">
-           <div class="field">
-              <input type="text" placeholder="Email Address" required>
-           </div>
-           <div class="field">
-              <input type="password" placeholder="Password" required>
-           </div>
-           <div class="pass-link">
-              <a href="#">Forgot password?</a>
-           </div>
-           <div class="field btn">
-              <div class="btn-layer"></div>
-              <input type="submit" value="Login">
-           </div>
-           <div class="signup-link">
-              Not a member? <a href="">Signup now</a>
-           </div>
+<div class="bs">
+  <div class="container1">
+    <div id="login"  class="wrapper text-center  justify-content-center align-item-center">
+      <div class="title-text">
+         <div class="title login">
+            Login Form
+         </div>
+         <div class="title signup">
+            Signup Form
+         </div>
+      </div>
+      <div class="form-container">
+         <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+         </div>
+         <div class="form-inner">
+            <form action="./html/game.html" method="post" class="login">
+               <div class="field">
+                  <input type="text" placeholder="Email Address" required>
+               </div>
+               <div class="field">
+                  <input type="password" placeholder="Password" required>
+               </div>
+               <div class="pass-link">
+                  <a href="#">Forgot password?</a>
+               </div>
+               <div class="field btn">
+                  <div class="btn-layer"></div>
+                  <input type="submit" value="Login" onclick="window.location.href = './html/game.html'; return false;">
+               </div>
+               <div class="signup-link">
+                  Not a member? <a href="">Signup now</a>
+               </div>
+            </form>
+            <form action="./html/game.html" method="post" class="signup">
+               <div class="field">
+                  <input type="email" placeholder="Email Address" required>
+               </div>
+               <div class="field">
+                 <input type="text" placeholder="Username" required>
+              </div>
+               <div class="field">
+                  <input type="password" id="new_password" name="new_password" placeholder="Password" required>
+               </div>
+               <div class="field">
+                  <input type="password" id="verifyPassword" name="verifyPassword" placeholder="Confirm password" required>
+               </div>
+               <div class="field btn">
+                  <div class="btn-layer"></div>
+                  <input type="submit" value="Signup" onclick="window.location.href = './html/game.html'; return false;">
+               </div>
+            </form>
+         </div>
+      </div>
+    </div>
+    </div>
+    <div class="container2">
+      <section id="contact-form">
+        <h2>Contact Form</h2>
+        <form action="submit_form.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+      
+          <input type="submit" value="Submit">
         </form>
-        <form action="#" class="signup">
-           <div class="field">
-              <input type="email" placeholder="Email Address" required>
-           </div>
-           <div class="field">
-             <input type="text" placeholder="Username" required>
-          </div>
-           <div class="field">
-              <input type="password" placeholder="Password" required>
-           </div>
-           <div class="field">
-              <input type="password" placeholder="Confirm password" required>
-           </div>
-           <div class="field btn">
-              <div class="btn-layer"></div>
-              <input type="submit" value="Signup">
-           </div>
-        </form>
-     </div>
-  </div>
+      </section>
+    </div>
 </div>
-</div>
+</body>
 
+</html>
 <footer class="text-center bg-dark text-light">
   <!-- Grid container -->
   <div class="container pt-4">
@@ -311,5 +332,6 @@
   <!-- Copyright -->
 </footer>
 <script src="./js/index.js"></script>
+<script src="contact.js"></script>
 </body>
 </html>
