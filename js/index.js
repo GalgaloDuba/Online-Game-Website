@@ -7,7 +7,6 @@
       nav1.classList.remove("navscrolled");
     }
   });
-
   const loginText = document.querySelector(".title-text .login");
   const loginForm = document.querySelector("form.login");
   const loginBtn = document.querySelector("label.login");
@@ -46,9 +45,16 @@
               }
   
               // Process login data (e.g., send to server)
+
               console.log("Login form submitted:", email, password);
+          
+              loginForm.onclick(window.location.href = './html/game.html');
           });
   
+        //   function submitForm() {
+        //     let form = document.querySelector("form.login");
+        //     form.submit();
+        // }
           
   // Get references to form elements
   const passwordInput = document.getElementById("new_password");
@@ -86,6 +92,7 @@
   
       // Process signup data (e.g., send to server)
       console.log("Signup form submitted:", email, username, password);
+      signupForm.onclick(window.location.href = './html/game.html');
   });
   
   // Email validation function
