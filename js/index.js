@@ -50,11 +50,6 @@
           
               loginForm.onclick(window.location.href = './html/game.html');
           });
-  
-        //   function submitForm() {
-        //     let form = document.querySelector("form.login");
-        //     form.submit();
-        // }
           
   // Get references to form elements
   const passwordInput = document.getElementById("new_password");
@@ -65,12 +60,12 @@
       event.preventDefault(); // Prevent default form submission
   
       // Validate email, username, password, and password confirmation
-      const email = signupForm.querySelector('input[type="email"]').value;
+      const email1 = signupForm.querySelector('input[type="email"]').value;
       const username = signupForm.querySelector('input[type="text"]').value;
-      const password = passwordInput.value;
+      const password1 = passwordInput.value;
       const confirmPassword = confirmPasswordInput.value;
   
-      if (!validateEmail(email)) {
+      if (!validateEmail(email1) || email1.trim()=== "") {
           alert("Invalid email address. Please enter a valid email.");
           return;
       }
@@ -80,18 +75,18 @@
           return;
       }
   
-      if (password.length < 6) {
+      if (password1.length < 6) {
           alert("Password must be at least 6 characters long.");
           return;
       }
   
-      if (password !== confirmPassword) {
+      if (password1 !== confirmPassword) {
           alert("Passwords do not match. Please confirm your password correctly.");
           return;
       }
   
       // Process signup data (e.g., send to server)
-      console.log("Signup form submitted:", email, username, password);
+      console.log("Signup form submitted:", email1, username, password1);
       signupForm.onclick(window.location.href = './html/game.html');
   });
   
@@ -100,6 +95,7 @@
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       return emailRegex.test(email);
   }
+
   
 
 
